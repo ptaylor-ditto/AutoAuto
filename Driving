@@ -1,0 +1,24 @@
+import car
+import os
+
+while True:
+    os.system('clear')
+    key = input("What would you like to do?\n")
+    if key == 'w':
+        car.forward(0.1)
+    if key == "a":
+        car.left(0.1)
+    if key == 's':
+        car.reverse(0.1)
+    if key == 'd':
+        car.right(0.1)
+    if key == 'i':
+        car.forward(2)
+    if key == 'j':
+        car.left(2)
+    if key == 'k':
+        car.reverse(2)
+    if key == 'l':
+        car.right(2)
+    if key == 'q':
+        break
