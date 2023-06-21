@@ -1,0 +1,8 @@
+from auto.camera import global_camera
+from auto.frame_streamer import stream
+
+camera = global_camera()
+
+for frame in camera.stream():
+    # <process frame here>
+    stream(frame, to_console=True, to_labs=True)
